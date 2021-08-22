@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Nunito:wght@300&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Nunito";
+    width: 100%;
+    height: 100%;
+    background: rgb(18, 18, 39);
+    color: #fff;
+}
+.index {
+    background-image: url("./images/pexels-fauxels-3183197.jpg");
+    background-size: cover;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #565767;
+    padding: 1.5rem 7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+nav .logo {
+    color:rgb(65, 134, 95);
+    background: rgb(194, 205, 90);
+    border: 5px dotted #000;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu-bar {
+        width: 3rem;
+        height: 0.5rem;
+        background-color: #000;
+        cursor: pointer;
+        display: none;
+}
+a {
+    text-decoration: none;
+    color:rgb(104, 89, 206);
+    padding: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+a:hover {
+    color: pink;
+}
+a span {
+    background: rgb(144, 131, 112);
+    color: rgb(172, 19, 44);
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+}
+a span:hover {
+    color:rgb(194, 125, 23);
+    background-color:rgb(13, 236, 236)
+}
+
+/*@media screen and (min-width: 765px) {
+    header h3,
+    header h1,
+    header p {
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+        font-weight: 900;
+        padding: 50px;
+        color: #888828;
+        margin: 20px;
+        transition: 0.5s ease-in;
+    }
+    header h3 {
+        position: relative;
+        left: 300px;
+        top: 50px;
+    }   
+    header p {
+        position: relative;
+        left: 600px;
+        top: 80px;
+    }
+}*/
+
+section h2 {
+    padding-bottom: 20px;
+}
+section h1 {
+    padding-bottom: 10px;
+}
+.blog {
+    background-image: url("/images/pexels-dominika-roseclay-905163.jpg");
+    background-size: cover;
+}
+.article1 {
+    background-color:rgb(144, 131, 112);
+    padding: 20px;
+    margin-top: 20px;;
+    width: 50%;
+    line-height: 40px;
+}
+.article1 h1 {
+    margin: 30px;
+}
+article {
+    margin: 30px;
+}
+.about {
+    background-color: #376d6e;
+    background-image: linear-gradient(45deg, #364f50 0%, #59295a 100%);
+
+}
+.about .article2 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+@media screen and (max-width: 375px) {
+    .index {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        display: block;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        height: 58%;
+        width: 100vw;
+        padding: 30px;
+        background-color: rgb(75, 129, 68);
+        transform: translateX(1000px);
+    }
+    nav ul li:hover {
+        background-color: rgb(68, 143, 209);
+    }
+    nav ul li {
+        display: block;
+        padding: 20PX;
+    }
+    .menu-bar {
+        background-color: aqua;
+        display: block;
+        position: absolute;
+        height: 0.5rem;
+        right: 0;
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+        border: 1px solid #fff;
+        transition: 1s ease;
+    }
+    .open {
+        transform: translateX(0);
+        transition: 1s ease;
+    }
+    .open-menu-bar {
+        transform: rotate(90deg);
+    }
+    a {
+        color: rgb(139, 0, 139);
+    }
+    header h3,
+    header h1,
+    header p {
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+        font-weight: 900;
+        padding: 20px;
+        color: #888828;
+        margin: 20px;
+    }
+}
+
